@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formula 1 portfolio</title>
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet"></head>
+<body>
+<style type="text/css">
+	.headLine{
+		font:48px 'Montserrat', sans-serif;	
+		font-weight:bold;
+		text-transform: uppercase;
+		line-height: .9;
+	}
+	.byline{
+		font:24px 'Open Sans', sans-serif;
+		padding-left:20px;
+
+	}
+	.circuitInfo, .resultListWrapper{
+		padding:10px;
+		border:1px solid black;
+		width:80%;
+		margin:0 auto;
+		background:white;
+	}
+	.heroImage{
+		background-size:cover;
+		background-position: center center;
+		height:650px;
+		position:relative;
+	}
+	.headlineWrapper{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+		width:50%;
+		text-align: center;
+		background:rgba(255,255,255,.5);
+		padding:10px;
+	}
+	.headLine span{
+		font-size:24px;
+		display:block;
+	}
+	.headlineWrapper button{
+		background:red;
+		padding:15px;
+		color:white;
+		border:0;
+		text-transform: uppercase;
+		font:14px 'Montserrat', sans-serif;
+		margin:10px;
+	}
+	.headlineWrapper button a{
+		color:white;
+		text-decoration: none;
+	}
+	.round{
+		font:24px 'Montserrat', sans-serif;
+		position:relative;
+	}
+	.resultList{
+		margin-top:30px;
+	}
+	.topNav{
+		padding:10px;
+		background: #1a1a1a;
+		color:white;
+		width:80%;
+		margin:0 auto;
+		text-align:center;
+	}
+	.topNav li{
+		font:18px 'Open Sans', sans-serif;
+		display: inline-block;
+		padding:0 15px;
+		-webkit-font-smoothing:antialiased;
+	}
+	.topNav li.on{border-bottom:2px solid white;}
+
+*{box-sizing:border-box;}
+html,body{height:100%;width:100%;}
+body{background:#1a1a1a}
+table, tbody, thead, tr{
+	display:block;
+	text-align:center;
+} 
+td,th{
+	/*padding:5px;*/
+	width:12%;
+	display:inline-block;
+	height:40px;
+}
+th{
+	font:bold 18px 'Montserrat',sans-serif;
+	height:60px;
+	line-height:60px;
+	text-transform: uppercase;
+	-webkit-font-smoothing:antialiased;
+	color:#1a1a1a;
+}
+
+table{
+/*	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);*/
+	background:#fff;
+	border:2px solid #111111;
+	border-radius:2px;
+	width:80%;
+	font:18px Open Sans, Helvetica, Arial, sans-serif;
+	color:#7B8585;
+	text-align: left;
+	box-shadow:0 0 16px 0px rgba(0,0,0,.2);
+	margin:0 auto;
+}
+
+tbody{
+	overflow:auto;
+	height:400px;
+}
+thead{
+	box-shadow:0px 1px 5px 0px rgba(0,0,0,.3)
+}
+
+tr{
+	transition:.3s;
+}
+thead tr:hover{
+	background:initial;
+	color:initial;
+}
+tr:hover{
+	cursor:pointer;
+	background: rgba(26, 26, 26,.5);
+	color:white;
+}
+</style>
+<div id="app"></div>
+<script type="text/javascript" src="/public/bundle.js"></script>
+</body>
+</html>
