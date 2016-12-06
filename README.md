@@ -1,6 +1,6 @@
 # formulaReact
 
-a SPA react/react-router application.
+a SPA using react, react-router, ES6 and webpack.
 Data provided by: http://ergast.com/mrd/
 
 **Directions**
