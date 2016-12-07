@@ -9,11 +9,13 @@
 	.headLine{
 		font:48px 'Montserrat', sans-serif;	
 		font-weight:bold;
-		text-transform: uppercase;
+		text-transform: capitalize;
 		line-height: .9;
+		margin:10px 0;
 	}
 	.byline{
-		font:24px 'Open Sans', sans-serif;
+		font:bold 16px 'Open Sans', sans-serif;
+		text-transform:uppercase;
 		padding-left:20px;
 
 	}
@@ -27,7 +29,7 @@
 	.heroImage{
 		background-size:cover;
 		background-position: center center;
-		height:650px;
+		height:500px;
 		position:relative;
 	}
 	.headlineWrapper{
@@ -39,27 +41,37 @@
 		text-align: center;
 		background:rgba(255,255,255,.5);
 		padding:10px;
+		border: 1px solid white;
 	}
 	.headLine span{
 		font-size:24px;
 		display:block;
 	}
-	.headlineWrapper button{
+	.headlineWrapper .button{
 		background:red;
-		padding:15px;
+		padding:10px;
 		color:white;
 		border:0;
 		text-transform: uppercase;
-		font:14px 'Montserrat', sans-serif;
-		margin:10px;
-	}
-	.headlineWrapper button a{
-		color:white;
+		font:12px 'Montserrat', sans-serif;
+		margin:25px 10px 10px;
+		display: inline-block;
 		text-decoration: none;
+		letter-spacing: 1px;
+		transition:.3s;
+	}
+	.headlineWrapper .button:hover{
+		background:#e50000;
 	}
 	.round{
-		font:24px 'Montserrat', sans-serif;
+		display:inline-block;
+		font:12px 'Open Sans', sans-serif;
+		padding:3px;
+		background:white;
+		text-transform: uppercase;
 		position:relative;
+		transform: skew(-10deg);
+		border:1px solid rgba(0,0,0,0.7)
 	}
 	.resultList{
 		margin-top:30px;
@@ -73,16 +85,17 @@
 		text-align:center;
 	}
 	.topNav li{
-		font:18px 'Open Sans', sans-serif;
+		font:14px 'Open Sans', sans-serif;
 		display: inline-block;
 		padding:0 15px;
 		-webkit-font-smoothing:antialiased;
+		text-transform: uppercase;
 	}
 	.topNav li.on{border-bottom:2px solid white;}
 
 *{box-sizing:border-box;}
 html,body{height:100%;width:100%;}
-body{background:#1a1a1a}
+/*body{background:#1a1a1a}*/
 table, tbody, thead, tr{
 	display:block;
 	text-align:center;
@@ -91,31 +104,31 @@ td,th{
 	/*padding:5px;*/
 	width:12%;
 	display:inline-block;
-	height:40px;
 }
 th{
-	font:bold 18px 'Montserrat',sans-serif;
-	height:60px;
-	line-height:60px;
+	font:bold 14px 'Montserrat',sans-serif;
+	height:40px;
+	line-height:40px;
 	text-transform: uppercase;
 	-webkit-font-smoothing:antialiased;
 	color:#1a1a1a;
 }
+td{
+	/*height:25px;*/
+	padding:5px;
+}
 
 table{
-/*	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%, -50%);*/
+	position:relative;
+	top:-100px;
 	background:#fff;
-	border:2px solid #111111;
 	border-radius:2px;
 	width:80%;
-	font:18px Open Sans, Helvetica, Arial, sans-serif;
+	font:14px Open Sans, Helvetica, Arial, sans-serif;
 	color:#7B8585;
 	text-align: left;
-	box-shadow:0 0 16px 0px rgba(0,0,0,.2);
-	margin:0 auto;
+	box-shadow:0 0 16px 0px rgba(0,0,0,.1);
+	margin:0 auto 50px;
 }
 
 tbody{

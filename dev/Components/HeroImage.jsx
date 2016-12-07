@@ -29,13 +29,12 @@ export class HeroImage extends Component {
 		return (
 			<div className="heroImage" style={{backgroundImage:"url(/img/"+raceId+".jpg)"}}>
 				<TopNav/>
-				<BackgroundImage raceId={raceId}/>
 				<div className="headlineWrapper">
 					<h1 className="headLine"><span>{season}</span>{raceName}</h1>
 					<span className="round">round {round}</span>
 					<span className="byline">{circuitName}</span><br/>
-					<button> <Link to={(raceId+1) < this.props.total ? (raceId+1).toString() : '1'}>previous race</Link></button>
-					<button> <Link to={(raceId-1) > 0 ? (raceId-1).toString() : (this.props.total-1).toString()}>next race</Link></button>
+					 <Link className="button" to={(raceId+1) < this.props.total ? (raceId+1).toString() : '1'}>previous race</Link>
+					 <Link className="button" to={(raceId-1) > 0 ? (raceId-1).toString() : (this.props.total-1).toString()}>next race</Link>
 				</div>
 			</div>
 		)
